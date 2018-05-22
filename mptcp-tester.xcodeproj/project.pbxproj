@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC056E0620B4129E005A2E2A /* mptcp-tester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mptcp-tester.entitlements"; sourceTree = "<group>"; };
 		BC56FAA020B07BDC003D7D77 /* mptcp-tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mptcp-tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC56FAA320B07BDC003D7D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC56FAA520B07BDC003D7D77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		BC56FAA220B07BDC003D7D77 /* mptcp-tester */ = {
 			isa = PBXGroup;
 			children = (
+				BC056E0620B4129E005A2E2A /* mptcp-tester.entitlements */,
 				BC56FAA320B07BDC003D7D77 /* AppDelegate.swift */,
 				BC56FAA520B07BDC003D7D77 /* ViewController.swift */,
 				BC56FAA720B07BDC003D7D77 /* Main.storyboard */,
@@ -96,6 +98,11 @@
 				TargetAttributes = {
 					BC56FA9F20B07BDC003D7D77 = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.Multipath = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -280,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "mptcp-tester/mptcp-tester.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2K2282N2MM;
 				INFOPLIST_FILE = "mptcp-tester/Info.plist";
@@ -298,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "mptcp-tester/mptcp-tester.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2K2282N2MM;
 				INFOPLIST_FILE = "mptcp-tester/Info.plist";
